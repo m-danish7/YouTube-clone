@@ -1,0 +1,166 @@
+
+.main-div{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, Arial;
+  
+}
+
+.main-div1{
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  font-family: Roboto, Arial;
+}
+
+.thumbnail{
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.thumbnail-1{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.pic-txt{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.pic{
+  vertical-align: top;
+  margin-top: 8px;
+  position: relative;
+  height: 45px;
+}
+
+.pic:hover .tooltip-1{
+  opacity: 1;
+}
+
+.tooltip-1{
+  position: absolute;
+  width: 220px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  opacity: 0;
+  cursor: pointer;
+  top: 55px;
+  z-index: 300;
+  pointer-events: none;
+  transition: .25s ease;
+}
+
+
+.tooltip-1 img{
+  width: 50px;
+  border-radius: 50px;
+  margin: 0px 0px 0px 8px;
+
+}
+
+.youtuber-name{
+  font-weight: bold;
+  font-size: 17px;
+  white-space: nowrap;
+  margin-bottom: 4px;
+  
+}
+
+.subscribers{
+  color: grey;
+  font-size: 12px;
+  white-space: nowrap;
+  margin-top: 0px;
+
+}
+
+.name-subscribers{
+  margin: 0px 0px 0px 8px;
+}
+
+.pic-1{
+  width: 36px;
+  border-radius: 50px;
+  
+}   
+
+.p1{
+  margin-top: 8px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.p2{
+  margin-top: 0px;
+  color: grey;
+  font-size: 12px;
+  height: 5px;
+}
+.p3{
+  margin-top: 5px;
+  color: grey;
+  font-size: 12px;
+}
+.whole{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.video-time{
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-family: Roboto, Arial;
+  right: 5px;
+  bottom: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 2px;
+
+}
+
+@media (max-width: 750px){
+  .whole{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+  .whole{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px){
+  .whole{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px){
+  .p1{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1000px){
+  .p2, .p3{
+    font-size: 14px;
+  }
+}
